@@ -6,6 +6,6 @@ then
 fi
 
 rm -r xelab.* xsc.* xsim.dir/ xvlog.*
-xsc $PSLDIR/afu_driver/src/afu_driver.c
+xsc $PSLSEDIR/afu_driver/src/afu_driver.c
 xvlog --sv *.sv
 xelab -timescale 1ns/1ps -svlog *.sv *.v -sv_root . -sv_lib libdpi -debug all
