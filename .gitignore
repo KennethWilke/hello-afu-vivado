@@ -6,3 +6,7 @@ xsc.pb
 xsim.dir/
 xvlog.log
 xvlog.pb
+webtalk*
+work.top.wdb
+xsim*.jou
+xsim*.log
