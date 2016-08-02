@@ -7,6 +7,6 @@ fi
 
 rm -r xelab.* xsc.* xsim.dir/ xvlog.*
 xsc $PSLSEDIR/afu_driver/src/afu_driver.c
-xvlog --sv *.sv *.v
+xvlog --sv *.sv
 xelab -timescale 1ns/1ps -svlog $PSLSEDIR/afu_driver/verilog/top.v -sv_root . -sv_lib libdpi -debug all
 xsim -g work.top
